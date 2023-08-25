@@ -49,6 +49,9 @@ func TestShouldDelete(t *testing.T) {
 		},
 	}
 	for _, test := range namesToTest {
+
+		test := test
+
 		t.Run(test.testName, func(*testing.T) {
 			test := test
 			mockInput := &apigateway.RestApi{
